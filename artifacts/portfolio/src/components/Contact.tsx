@@ -1,58 +1,112 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, Send } from "lucide-react";
+
+const CONTACT_CARDS = [
+  {
+    icon: Mail,
+    title: "Email",
+    value: "cse.engineer.vu@gmail.com",
+    href: "mailto:cse.engineer.vu@gmail.com",
+    gradient: "from-primary/20 to-cyan-500/10",
+    iconColor: "text-primary",
+    border: "hover:border-primary/50",
+  },
+  {
+    icon: Linkedin,
+    title: "LinkedIn",
+    value: "mdsojibsarker",
+    href: "https://www.linkedin.com/in/mdsojibsarker/",
+    gradient: "from-blue-500/20 to-blue-600/10",
+    iconColor: "text-blue-400",
+    border: "hover:border-blue-400/50",
+  },
+  {
+    icon: Github,
+    title: "GitHub",
+    value: "sojibsjoy",
+    href: "https://github.com/sojibsjoy",
+    gradient: "from-violet-500/20 to-violet-600/10",
+    iconColor: "text-violet-400",
+    border: "hover:border-violet-400/50",
+  },
+];
 
 export function Contact() {
   return (
-    <section id="contact" className="py-32 relative">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
+    <section id="contact" className="py-32 relative overflow-hidden">
+      {/* Background glows */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-primary/8 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/4 right-0 w-[400px] h-[400px] bg-violet-600/5 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="glass-card rounded-3xl p-10 md:p-16 border-primary/20"
+          transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Let's Work Together</h2>
-          <p className="text-xl text-muted-foreground mb-12 max-w-xl mx-auto">
-            Open to senior Flutter engineering roles and exciting mobile projects. Let's build something amazing.
+          {/* Heading */}
+          <div className="mb-4">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              Open to Opportunities
+            </span>
+          </div>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            Let's Build Something{" "}
+            <span
+              className="bg-clip-text text-transparent"
+              style={{ backgroundImage: "linear-gradient(135deg, #00d4ff 0%, #a855f7 50%, #ec4899 100%)" }}
+            >
+              Exceptional
+            </span>
+          </h2>
+          <p className="text-xl text-muted-foreground mb-14 max-w-xl mx-auto leading-relaxed">
+            Open to senior Flutter engineering roles and exciting mobile projects. Reach out through any of the channels below.
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
-            <a 
-              href="mailto:cse.engineer.vu@gmail.com"
-              className="flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-semibold bg-primary text-white shadow-lg shadow-primary/25 hover:shadow-[0_0_30px_rgba(0,212,255,0.4)] hover:-translate-y-1 transition-all duration-300"
-            >
-              <Mail className="w-5 h-5" />
-              Say Hello
-            </a>
-            
-            <a 
-              href="https://www.linkedin.com/in/mdsojibsarker/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-semibold bg-secondary text-white border border-border hover:border-primary/50 hover:bg-secondary/80 transition-all duration-300"
-            >
-              <Linkedin className="w-5 h-5" />
-              LinkedIn
-            </a>
+          {/* Contact cards */}
+          <div className="grid sm:grid-cols-3 gap-5 mb-10">
+            {CONTACT_CARDS.map((card, i) => (
+              <motion.a
+                key={card.title}
+                href={card.href}
+                target={card.href.startsWith("mailto") ? undefined : "_blank"}
+                rel={card.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                whileHover={{ y: -4 }}
+                className={`group relative bg-card border border-border ${card.border} rounded-2xl p-6 text-left transition-all duration-300 overflow-hidden`}
+              >
+                {/* Card gradient bg */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${card.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
 
-            <a 
-              href="https://github.com/sojibsjoy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-semibold bg-secondary text-white border border-border hover:border-primary/50 hover:bg-secondary/80 transition-all duration-300"
-            >
-              <Github className="w-5 h-5" />
-              GitHub
-            </a>
+                <div className="relative">
+                  <div className={`w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <card.icon className={`w-6 h-6 ${card.iconColor}`} />
+                  </div>
+                  <div className="text-xs text-muted-foreground mb-1 font-medium uppercase tracking-wider">{card.title}</div>
+                  <div className="text-sm font-semibold text-white break-all leading-snug">{card.value}</div>
+                </div>
+              </motion.a>
+            ))}
           </div>
 
-          <div className="flex items-center justify-center gap-2 text-muted-foreground">
-            <Mail className="w-4 h-4" />
-            <span className="text-sm font-medium">cse.engineer.vu@gmail.com</span>
-          </div>
+          {/* CTA button */}
+          <motion.a
+            href="mailto:cse.engineer.vu@gmail.com"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            whileHover={{ y: -2, scale: 1.02 }}
+            className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-semibold text-white text-lg shadow-2xl shadow-primary/20 hover:shadow-primary/40 transition-all duration-300"
+            style={{ background: "linear-gradient(135deg, #00d4ff 0%, #7c3aed 100%)" }}
+          >
+            <Send className="w-5 h-5" />
+            Send a Message
+          </motion.a>
         </motion.div>
       </div>
     </section>
