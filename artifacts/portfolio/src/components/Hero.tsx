@@ -130,7 +130,7 @@ export function Hero() {
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground leading-none mb-0.5">Specialist</div>
-                  <div className="text-sm font-semibold text-white leading-tight">Cross-Platform<br />App Specialist</div>
+                  <div className="text-sm font-semibold text-white leading-tight">Cross-Platform<br />App Deployment</div>
                 </div>
               </motion.div>
             </div>

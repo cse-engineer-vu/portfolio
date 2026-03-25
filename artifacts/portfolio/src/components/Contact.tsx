@@ -14,8 +14,8 @@ const CONTACT_CARDS = [
   {
     icon: Linkedin,
     title: "LinkedIn",
-    value: "mdsojibsarker",
-    href: "https://www.linkedin.com/in/mdsojibsarker/",
+    value: "sojibsarker",
+    href: "https://www.linkedin.com/in/sojibsarker/",
     gradient: "from-blue-500/20 to-blue-600/10",
     iconColor: "text-blue-400",
     border: "hover:border-blue-400/50",
