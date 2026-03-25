@@ -1,22 +1,22 @@
 import { motion } from "framer-motion";
-import { ExternalLink, AppWindow } from "lucide-react";
+import { ExternalLink, ShoppingBag, Play } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 
 const PROJECTS = [
   {
     title: "DryX Laundry",
     link: "https://dryx.ae/",
-    appStore: "https://apps.apple.com/",
-    playStore: "https://play.google.com/",
+    appStore: "https://apps.apple.com/ae/app/dryx/id6740347565",
+    playStore: "https://play.google.com/store/apps/details?id=com.dryx.laundry",
     description: "Premium dry cleaning & laundry service booking app with map-based location tracking.",
     problem: "Users lacked a seamless, real-time way to book laundry services with live tracking and secure payments.",
-    tech: ["Flutter", "Dart", "Magnati Payment", "Apple Pay", "Google Maps SDK", "Wallet System"],
+    tech: ["Flutter", "Magnati Payment", "Apple Pay", "Google Maps SDK", "Wallet System"],
     impact: "Deployed to both iOS & Android. Integrated Magnati Secure Payment Gateway with Apple Pay and dynamic Wallet System.",
     image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=800&h=500&fit=crop"
   },
   {
     title: "OffTheBeatenTrack – UAE",
-    link: "#",
+    link: "https://apps.apple.com/",
     appStore: "https://apps.apple.com/",
     playStore: "https://play.google.com/",
     description: "Location-based event management application for Dubai with Stripe-gated access control.",
@@ -27,7 +27,7 @@ const PROJECTS = [
   },
   {
     title: "Cabby – Ride Tracking",
-    link: "#",
+    link: "https://apps.apple.com/",
     appStore: "https://apps.apple.com/",
     playStore: "https://play.google.com/",
     description: "Real-time ride tracking platform with dedicated customer and driver-side applications.",
@@ -38,7 +38,7 @@ const PROJECTS = [
   },
   {
     title: "noa.market",
-    link: "#",
+    link: "https://apps.apple.com/",
     appStore: "https://apps.apple.com/",
     playStore: "",
     description: "Real-time location-based e-commerce app integrated with supplier-side application and Stripe.",
@@ -49,7 +49,7 @@ const PROJECTS = [
   },
   {
     title: "Motion View App",
-    link: "#",
+    link: "https://apps.apple.com/",
     appStore: "https://apps.apple.com/",
     playStore: "https://play.google.com/",
     description: "Full-featured e-commerce application serving 10K+ active users with local payment gateway support.",
@@ -64,8 +64,8 @@ export function Projects() {
   return (
     <section id="projects" className="py-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading 
-          title="Featured Projects" 
+        <SectionHeading
+          title="Featured Projects"
           subtitle="Real-world cross-platform applications I've built and shipped to production."
         />
 
@@ -81,8 +81,8 @@ export function Projects() {
             >
               <div className="relative h-52 overflow-hidden">
                 <div className="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors z-10 duration-500" />
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -90,34 +90,40 @@ export function Projects() {
 
               <div className="p-8 flex-1 flex flex-col">
                 <div className="flex justify-between items-start mb-3">
+                  {/* All titles are now clickable */}
                   <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">
-                    {project.link !== "#" ? (
-                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                        {project.title}
-                      </a>
-                    ) : (
-                      project.title
-                    )}
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      {project.title}
+                    </a>
                   </h3>
+
+                  {/* Store icons */}
                   <div className="flex gap-2 shrink-0">
                     {project.appStore && (
-                      <a href={project.appStore} target="_blank" rel="noopener noreferrer" 
-                        className="p-2 bg-secondary rounded-lg hover:bg-primary/20 text-muted-foreground hover:text-primary transition-colors"
-                        title="App Store">
-                        <AppWindow className="w-4 h-4" />
+                      <a href={project.appStore} target="_blank" rel="noopener noreferrer"
+                        title="App Store"
+                        className="flex items-center gap-1 px-2.5 py-1.5 bg-secondary rounded-lg hover:bg-primary/20 text-muted-foreground hover:text-primary transition-colors text-xs font-medium">
+                        <ShoppingBag className="w-3.5 h-3.5" />
+                        <span>iOS</span>
                       </a>
                     )}
-                    {project.link !== "#" && (
-                      <a href={project.link} target="_blank" rel="noopener noreferrer" 
-                        className="p-2 bg-secondary rounded-lg hover:bg-primary/20 text-muted-foreground hover:text-primary transition-colors">
-                        <ExternalLink className="w-4 h-4" />
+                    {project.playStore && (
+                      <a href={project.playStore} target="_blank" rel="noopener noreferrer"
+                        title="Google Play"
+                        className="flex items-center gap-1 px-2.5 py-1.5 bg-secondary rounded-lg hover:bg-green-500/20 text-muted-foreground hover:text-green-400 transition-colors text-xs font-medium">
+                        <Play className="w-3.5 h-3.5" />
+                        <span>Android</span>
                       </a>
                     )}
+                    <a href={project.link} target="_blank" rel="noopener noreferrer"
+                      className="p-2 bg-secondary rounded-lg hover:bg-primary/20 text-muted-foreground hover:text-primary transition-colors">
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
                   </div>
                 </div>
 
                 <p className="text-muted-foreground mb-4">{project.description}</p>
-                
+
                 <div className="mb-4 flex-1 space-y-3">
                   <div>
                     <strong className="text-white text-sm block mb-1">Problem:</strong>

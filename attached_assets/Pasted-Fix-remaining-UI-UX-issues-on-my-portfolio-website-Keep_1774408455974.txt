@@ -1,0 +1,66 @@
+Fix remaining UI/UX issues on my portfolio website. Keep the dark theme, glassmorphism cards, gradients, and responsive layout. Apply the following fixes:
+
+1. Remove Header “S” Card
+On the header, there is a small card with the letter “S” to the left of my name.
+Remove this card completely.
+Keep only the name and navigation.
+2. Update Floating Card Text
+Change floating card text from “Senior Flutter Expert” to something more meaningful (since Senior & Expert mean the same).
+Replace with one of these:
+“Flutter Architect”
+“Flutter Performance Specialist”
+“Cross-Platform App Specialist”
+“Flutter & Payment Systems Engineer” ← Recommended
+Keep the glassmorphism floating card style and animation.
+3. Smooth Background Transition Between Sections
+There is a visible hard background break between Hero Section and About Me section.
+Make the transition soft and smooth using:
+Gradient background blend OR
+Blur divider OR
+Soft shadow section separator
+The sections should feel like part of the same surface, not separate blocks.
+4. About Me Section Redesign
+Remove:
+Location text
+Profile photo
+The white bold paragraph starting with “Senior Software Engineer specializing in Flutter…”
+On the right side, add a large glassmorphism card with a custom developer icon, such as:
+</>
+Flutter logo
+Mobile + Backend icon
+Code brackets icon
+This card should be large enough to balance the height of the About Me section.
+5. Add New AI Skills Card in “Technical Arsenal”
+Add a 7th card at the end of the Technical Arsenal section.
+This card should be centered on the last row.
+Card title: “AI Assisted Development”
+Card content:
+Vibe Coding
+Designing with Google Stitch
+Debugging with AI Models
+AI-assisted architecture planning
+6. Update “Tools & DevOps”
+Add “Windsurf AI IDE” to the Tools & DevOps list.
+Keep same card style and icon layout.
+7. Featured Projects Links Fix
+Some project titles are clickable and some are not.
+Make all Featured Project titles clickable using links from my resume.
+Add:
+App Store icon → Link to App Store
+Google Play icon → Link to Play Store
+Icons should appear inside each project card.
+8. Work Experience Remote / On-Site Fix
+Currently only Hi-Tech Bangla (Texas, USA) shows Remote.
+Update job types correctly:
+Motion View → On-site
+All other companies → Remote
+Show a badge on each job card:
+Remote → Blue badge
+On-site → Green badge
+General UI Rules
+Keep consistent left alignment.
+Keep glass cards consistent.
+Keep spacing consistent between sections.
+Keep responsive design for mobile and tablet.
+Use subtle hover animations.
+Do not change the overall theme, only polish and fix layout.

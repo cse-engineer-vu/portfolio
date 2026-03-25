@@ -15,9 +15,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -32,52 +30,33 @@ export function Header() {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        <a href="#" className="group flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-blue-700 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition-all">
-            S
-          </div>
-          <span className="font-semibold text-xl tracking-tight">
-            Md. Sojib Sarker
-          </span>
+        <a href="#" className="font-semibold text-xl tracking-tight hover:text-primary transition-colors">
+          Md. Sojib Sarker
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
           <ul className="flex items-center gap-8 text-sm font-medium text-muted-foreground">
             {NAV_LINKS.map((link) => (
               <li key={link.name}>
-                <a
-                  href={link.href}
-                  className="hover:text-primary transition-colors duration-200"
-                >
+                <a href={link.href} className="hover:text-primary transition-colors duration-200">
                   {link.name}
                 </a>
               </li>
             ))}
           </ul>
           <div className="flex items-center gap-4 pl-8 border-l border-border">
-            <a
-              href="https://github.com/sojibsjoy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-white transition-colors"
-            >
+            <a href="https://github.com/sojibsjoy" target="_blank" rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-white transition-colors">
               <Github className="w-5 h-5" />
             </a>
-            <a
-              href="https://www.linkedin.com/in/mdsojibsarker/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-white transition-colors"
-            >
+            <a href="https://www.linkedin.com/in/mdsojibsarker/" target="_blank" rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-white transition-colors">
               <Linkedin className="w-5 h-5" />
             </a>
           </div>
         </nav>
 
-        <button
-          className="md:hidden text-foreground p-2"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
+        <button className="md:hidden text-foreground p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? <X /> : <Menu />}
         </button>
       </div>
@@ -87,38 +66,19 @@ export function Header() {
           <ul className="px-4 py-6 flex flex-col gap-4">
             {NAV_LINKS.map((link) => (
               <li key={link.name}>
-                <a
-                  href={link.href}
-                  className="block text-lg font-medium text-foreground hover:text-primary"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
+                <a href={link.href} className="block text-lg font-medium text-foreground hover:text-primary"
+                  onClick={() => setMobileMenuOpen(false)}>
                   {link.name}
                 </a>
               </li>
             ))}
             <li className="pt-4 mt-4 border-t border-border flex items-center gap-6">
-              <a
-                href="https://github.com/sojibsjoy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-white"
-              >
-                <Github className="w-6 h-6" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/mdsojibsarker/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-white"
-              >
-                <Linkedin className="w-6 h-6" />
-              </a>
-              <a
-                href="mailto:cse.engineer.vu@gmail.com"
-                className="text-muted-foreground hover:text-white"
-              >
-                <Mail className="w-6 h-6" />
-              </a>
+              <a href="https://github.com/sojibsjoy" target="_blank" rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-white"><Github className="w-6 h-6" /></a>
+              <a href="https://www.linkedin.com/in/mdsojibsarker/" target="_blank" rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-white"><Linkedin className="w-6 h-6" /></a>
+              <a href="mailto:cse.engineer.vu@gmail.com" className="text-muted-foreground hover:text-white">
+                <Mail className="w-6 h-6" /></a>
             </li>
           </ul>
         </div>
