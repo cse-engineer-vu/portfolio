@@ -1,0 +1,417 @@
+Build a Modern Senior Flutter Engineer Portfolio Website**
+
+Create a **modern, responsive portfolio website** for a **Senior Flutter Engineer**.
+
+The portfolio should be **minimal, recruiter-friendly, and highly professional**, showcasing experience building scalable cross-platform mobile applications.
+
+---
+
+# Developer Profile
+
+Senior Flutter Engineer with strong experience building scalable mobile applications.
+
+Expertise includes:
+
+* Flutter
+
+* Dart
+
+* Firebase
+
+* REST APIs
+
+* Clean Architecture
+
+* State Management (Bloc, Riverpod, Provider)
+
+* CI/CD automation
+
+Experienced in building **high-performance cross-platform applications for Android, iOS, and Web**.
+
+---
+
+# Design Requirements
+
+The website should have a **modern developer-focused aesthetic**.
+
+**UI Style**
+
+* Minimal and professional
+
+* Dark mode as the default theme
+
+* Accent color: **Electric Blue or Cyan**
+
+* Optional light mode
+
+* Clean typography
+
+* Subtle gradients and modern UI polish
+
+* Smooth animations and micro-interactions
+
+**UX Requirements**
+
+* Fully responsive (mobile, tablet, desktop)
+
+* Fast loading
+
+* SEO optimized
+
+* Smooth scroll navigation
+
+* Subtle hover effects and transitions
+
+---
+
+# Portfolio Owner Information
+
+Name: **Md. Sojib Sarker**
+
+Display the full name in:
+
+* Top navigation/header
+
+* Hero section
+
+Experience label should display:
+
+**6+ Years Experience**
+
+---
+
+# Profile Picture
+
+Add a professional **profile image**.
+
+Requirements:
+
+* Circular image
+
+* Subtle shadow
+
+* Responsive across devices
+
+* Modern developer aesthetic
+
+Placement options:
+
+* Hero section (near the "Open to New Opportunities" badge)
+
+* OR inside the About section
+
+Use the **attached image**.
+
+---
+
+# Portfolio Sections
+
+## 1. Hero Section
+
+Create a strong and recruiter-focused hero section.
+
+Requirements:
+
+Headline positioning the developer as:
+
+**Senior Flutter Engineer**
+
+Include:
+
+* Short tagline explaining expertise in scalable cross-platform apps
+
+* "Open to New Opportunities" badge
+
+* CTA buttons:
+
+* View Projects
+
+* Contact
+
+* GitHub
+
+* LinkedIn
+
+Hero should feel **modern, concise, and impactful**.
+
+---
+
+## 2. About Me
+
+Create a professional summary that highlights:
+
+* Mobile engineering expertise
+
+* Experience building scalable architectures
+
+* Focus on performance and maintainability
+
+* Cross-platform development leadership
+
+Content should be:
+
+* Concise
+
+* Professional
+
+* Recruiter-friendly
+
+---
+
+## 3. What I Bring to a Team
+
+Add a section highlighting senior-level strengths.
+
+Display using **modern cards or bullet points**.
+
+Include strengths such as:
+
+* Scalable Flutter architecture
+
+* Clean Architecture and SOLID principles
+
+* Performance optimization
+
+* CI/CD automation
+
+* Firebase and API integrations
+
+* Cross-platform mobile expertise
+
+---
+
+## 4. Skills Section
+
+Group skills visually using cards or icons.
+
+Categories:
+
+**Languages**
+
+* Dart
+
+**Frameworks**
+
+* Flutter
+
+**Backend / Cloud**
+
+* Firebase
+
+* REST APIs
+
+**State Management**
+
+* Bloc
+
+* Riverpod
+
+* Provider
+
+**Architecture**
+
+* Clean Architecture
+
+* MVVM
+
+**Tools**
+
+* Git
+
+* CI/CD
+
+* Fastlane
+
+---
+
+## 5. Projects Section
+
+Display **real project case studies** instead of placeholders.
+
+Each project card should include:
+
+* Project name
+
+* Short description
+
+* Problem solved
+
+* Technologies used
+
+* Key impact or achievements
+
+* Project link
+
+Project title must be **clickable** and open the project website in a **new tab**.
+
+Example project link format:
+
+DryX Laundry
+
+https://dryx.ae/
+
+Ensure projects look like **real production Flutter apps**, such as:
+
+* Fintech app
+
+* E-commerce platform
+
+* Delivery service
+
+* Productivity tool
+
+* Social/community app
+
+---
+
+## 6. Experience Timeline
+
+Create a professional timeline showing:
+
+* Company name
+
+* Role
+
+* Duration
+
+* Key responsibilities
+
+* Achievements
+
+Company names must be **clickable** and open the company website in a **new tab**.
+
+Example:
+
+Avaton
+
+https://avaton.io/
+
+---
+
+## 7. GitHub Activity
+
+Integrate **GitHub activity visualization** showing:
+
+* Contribution activity
+
+* Repository highlights
+
+* GitHub profile link
+
+Include a button:
+
+Visit GitHub Profile
+
+Correct GitHub link:
+
+https://github.com/sojibsjoy
+
+Open in **new tab**.
+
+---
+
+## 8. Contact Section
+
+Include a clean contact section with:
+
+* Email contact
+
+* Social links
+
+* Contact buttons
+
+Backend requirement:
+
+**Frontend only (no backend)**
+
+Use:
+
+* mailto links
+
+* social profile links
+
+---
+
+## 9. Footer
+
+Include:
+
+* Copyright
+
+* Quick navigation
+
+* Social links
+
+---
+
+# Animations
+
+Add subtle animations such as:
+
+* Fade-in sections
+
+* Slide-in elements
+
+* Hover effects on cards
+
+* Smooth transitions
+
+Animations should remain **professional and not distracting**.
+
+---
+
+# Button and Hover Fix
+
+Ensure buttons such as:
+
+* GitHub
+
+* LinkedIn
+
+* Contact
+
+Do **not change text color to black on hover**.
+
+Instead:
+
+* Keep text **white**
+
+* OR use the accent color
+
+Ensure **good contrast in dark mode**.
+
+---
+
+# Code & Technical Requirements
+
+* Clean, maintainable code
+
+* Modular structure
+
+* Easy to update project and experience data
+
+* Optimized for performance
+
+* Fully responsive layout
+
+External links must **always open in a new tab**.
+
+---
+
+# Future Content Update
+
+Later I will provide a **resume**.
+
+When provided, extract and update:
+
+* About section
+
+* Skills
+
+* Experience timeline
+
+* Project case studies
+
+* Contact information
+
+Rewrite content to be **concise, professional, and recruiter-friendly**.

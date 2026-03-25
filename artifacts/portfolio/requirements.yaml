@@ -1,0 +1,16 @@
+packages:
+  "framer-motion": "For smooth scroll reveals and page transitions"
+  "clsx": "For conditional class name joining"
+  "tailwind-merge": "For merging tailwind classes safely"
+
+images:
+  - path: "artifacts/portfolio/public/images/profile.png"
+    description: "Abstract highly stylized geometric letter S avatar in glowing cyan and deep navy, 3d render, professional tech aesthetic, dark background"
+    aspect_ratio: "1:1"
+  - path: "artifacts/portfolio/public/images/hero-bg.png"
+    description: "Subtle dark futuristic grid pattern with faint glowing cyan nodes and soft lighting, deep navy background, abstract tech"
+    aspect_ratio: "16:9"
+
+notes:
+  - Portfolio is frontend only, no API needed.
+  - Dark mode is default.
