@@ -3,12 +3,12 @@ import { ArrowRight, Github, Linkedin, ChevronDown, CreditCard, Code2 } from "lu
 
 const floatAnimation = {
   y: [0, -10, 0],
-  transition: { duration: 3, repeat: Infinity, ease: "easeInOut" },
+  transition: { duration: 3, repeat: Infinity, ease: "easeInOut" as const },
 };
 
 const floatAnimationDelayed = {
   y: [0, -8, 0],
-  transition: { duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 1 },
+  transition: { duration: 3.5, repeat: Infinity, ease: "easeInOut" as const, delay: 1 },
 };
 
 export function Hero() {
