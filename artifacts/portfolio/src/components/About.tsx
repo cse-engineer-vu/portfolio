@@ -5,33 +5,33 @@ import { SectionHeading } from "./SectionHeading";
 const BRING_TO_TEAM = [
   {
     icon: <Layers className="w-6 h-6 text-primary" />,
-    title: "Scalable Architecture",
-    description: "Design systems and modular codebases built for growth and massive scale."
+    title: "Scalable Flutter Architecture",
+    description: "Design systems and modular codebases built for growth, using Clean Architecture and dependency injection."
   },
   {
     icon: <Cpu className="w-6 h-6 text-primary" />,
-    title: "Clean Architecture",
-    description: "Separation of concerns, testability, and maintainability adhering to SOLID principles."
+    title: "Clean Architecture & SOLID",
+    description: "Separation of concerns, testability, and maintainability — SOLID principles applied consistently."
   },
   {
     icon: <Zap className="w-6 h-6 text-primary" />,
     title: "Performance Optimization",
-    description: "Ensuring 60fps animations, reduced bundle sizes, and highly efficient rebuilds."
+    description: "Smooth 60fps animations, efficient widget rebuilds, and reduced app sizes for better user experience."
   },
   {
     icon: <GitMerge className="w-6 h-6 text-primary" />,
     title: "CI/CD Automation",
-    description: "Streamlining deployments with Fastlane, GitHub Actions, and automated release pipelines."
+    description: "Streamlined deployments using Fastlane, GitHub Actions, TestFlight, and automated release pipelines."
   },
   {
     icon: <Database className="w-6 h-6 text-primary" />,
-    title: "Backend Integration",
-    description: "Deep expertise connecting apps to Firebase, REST, GraphQL APIs, and WebSockets."
+    title: "Firebase & API Integration",
+    description: "Deep expertise with Firebase Auth, Cloud Messaging, Real-time DB, REST APIs, and payment gateways."
   },
   {
     icon: <Smartphone className="w-6 h-6 text-primary" />,
-    title: "Cross-Platform",
-    description: "Delivering unified production experiences across Android, iOS, and Flutter Web."
+    title: "Cross-Platform Expertise",
+    description: "Production apps shipped to both PlayStore & AppStore — 17+ projects across Android and iOS."
   }
 ];
 
@@ -53,13 +53,13 @@ export function About() {
             className="lg:col-span-5 prose prose-invert prose-lg"
           >
             <p className="text-xl leading-relaxed text-foreground mb-6">
-              I am a Mobile Engineering expert specializing in Flutter. With over 6 years of experience, I've built production-grade cross-platform apps for Android, iOS, and Web.
+              Senior Software Engineer specializing in Flutter with 6+ years of experience building production-grade cross-platform applications for Android, iOS, and Web.
             </p>
             <p className="text-muted-foreground mb-6">
-              I'm deeply passionate about clean architecture, performance optimization, and creating scalable mobile solutions. Throughout my career, I've led the development of multiple high-impact consumer applications serving hundreds of thousands of users.
+              I've led engineering across startups and scale-ups in Dubai and Bangladesh — shipping 17+ apps to the PlayStore and AppStore, integrating complex payment gateways (Stripe, Magnati, Apple Pay, RevenueCat), and building enterprise-grade platforms used by thousands of users daily.
             </p>
             <p className="text-muted-foreground">
-              Beyond just writing code, I am a strong advocate for SOLID principles, test-driven development, and mentoring teams to elevate the overall engineering culture.
+              I hold a BSc in Computer Science from Varendra University with a thesis in Deep Learning (Glaucoma Detection). Beyond engineering, I'm a competitive programmer — a 1st place winner at the VUPC Juniors Programming Contest and multiple podium finishes across national and regional contests.
             </p>
           </motion.div>
 

@@ -33,15 +33,14 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <a href="#" className="group flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-blue-700 flex items-center justify-center text-white font-display font-bold text-xl shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition-all">
+          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-blue-700 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition-all">
             S
           </div>
-          <span className="font-display font-bold text-xl tracking-tight">
+          <span className="font-semibold text-xl tracking-tight">
             Md. Sojib Sarker
           </span>
         </a>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           <ul className="flex items-center gap-8 text-sm font-medium text-muted-foreground">
             {NAV_LINKS.map((link) => (
@@ -65,7 +64,7 @@ export function Header() {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/mdsojibsarker/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-white transition-colors"
@@ -75,7 +74,6 @@ export function Header() {
           </div>
         </nav>
 
-        {/* Mobile Menu Toggle */}
         <button
           className="md:hidden text-foreground p-2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -84,7 +82,6 @@ export function Header() {
         </button>
       </div>
 
-      {/* Mobile Nav */}
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-card/95 backdrop-blur-xl border-b border-border shadow-xl">
           <ul className="px-4 py-6 flex flex-col gap-4">
@@ -109,7 +106,7 @@ export function Header() {
                 <Github className="w-6 h-6" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/mdsojibsarker/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-white"
@@ -117,7 +114,7 @@ export function Header() {
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="mailto:sojib.sarker@email.com"
+                href="mailto:cse.engineer.vu@gmail.com"
                 className="text-muted-foreground hover:text-white"
               >
                 <Mail className="w-6 h-6" />

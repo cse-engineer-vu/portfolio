@@ -4,23 +4,27 @@ import { SectionHeading } from "./SectionHeading";
 const SKILL_CATEGORIES = [
   {
     name: "Languages & Frameworks",
-    skills: ["Dart", "Flutter", "Swift (Basic)", "Kotlin (Basic)", "JavaScript"]
+    skills: ["Flutter", "Dart", "Java", "Swift"]
   },
   {
     name: "State Management",
-    skills: ["Bloc", "Cubit", "Riverpod", "Provider", "GetX"]
+    skills: ["BLoC", "Cubit", "Provider", "GetX", "Riverpod"]
   },
   {
-    name: "Architecture & Design",
-    skills: ["Clean Architecture", "MVVM", "SOLID Principles", "Design Patterns", "TDD"]
+    name: "Architecture & Patterns",
+    skills: ["Clean Architecture", "MVVM", "SOLID Principles", "OOP", "Dependency Injection", "Method Channel"]
   },
   {
-    name: "Backend & Cloud",
-    skills: ["Firebase", "REST APIs", "GraphQL", "WebSockets", "Supabase"]
+    name: "Firebase & Backend",
+    skills: ["Firebase Auth", "Cloud Messaging", "Real-time Database", "RESTful APIs", "MySQL"]
+  },
+  {
+    name: "Payment Gateways",
+    skills: ["Stripe", "Google Pay", "Apple Pay", "RevenueCat", "Magnati", "SSLCOMMERZ"]
   },
   {
     name: "Tools & DevOps",
-    skills: ["Git", "Fastlane", "GitHub Actions", "CI/CD", "Figma", "Jira"]
+    skills: ["Git", "Android Studio", "Xcode", "TestFlight", "AppStore Connect", "CocoaPods", "Gradle", "Fastlane"]
   }
 ];
 
@@ -30,7 +34,7 @@ export function Skills() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
           title="Technical Arsenal" 
-          subtitle="My toolkit for building robust, scalable mobile applications."
+          subtitle="My toolkit for building robust, scalable cross-platform mobile applications."
           centered
         />
 

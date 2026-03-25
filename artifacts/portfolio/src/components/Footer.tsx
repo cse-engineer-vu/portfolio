@@ -7,22 +7,30 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
           
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-md bg-primary flex items-center justify-center text-white font-display font-bold text-sm">
+            <div className="w-8 h-8 rounded-md bg-primary flex items-center justify-center text-white font-bold text-sm">
               S
             </div>
-            <span className="font-display font-bold text-lg text-white">Md. Sojib Sarker</span>
+            <span className="font-bold text-lg text-white">Md. Sojib Sarker</span>
           </div>
+
+          <nav className="flex gap-6 text-sm text-muted-foreground">
+            {["About", "Skills", "Projects", "Experience", "Contact"].map(item => (
+              <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-primary transition-colors">
+                {item}
+              </a>
+            ))}
+          </nav>
 
           <div className="flex gap-6">
             <a href="https://github.com/sojibsjoy" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
               <span className="sr-only">GitHub</span>
               <Github className="w-5 h-5" />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/mdsojibsarker/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
               <span className="sr-only">LinkedIn</span>
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="mailto:sojib.sarker@email.com" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="mailto:cse.engineer.vu@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
               <span className="sr-only">Email</span>
               <Mail className="w-5 h-5" />
             </a>

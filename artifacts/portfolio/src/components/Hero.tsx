@@ -80,7 +80,7 @@ export function Hero() {
                   <Github className="w-5 h-5" />
                 </a>
                 <a 
-                  href="#"
+                  href="https://www.linkedin.com/in/mdsojibsarker/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 rounded-xl bg-secondary text-white border border-border hover:bg-secondary/80 hover:text-primary transition-all duration-300"
